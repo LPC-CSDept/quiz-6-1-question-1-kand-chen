@@ -8,7 +8,7 @@ using namespace std;
 void getinput(int &a, int &b);
 void swapTwoValues(int &A, int &B);
 void getinput(float &c, float &d);
-void swapTwoValues(float A, float B);
+void swapTwoValues(float &C, float &D);
 
 int main()
 {
@@ -27,27 +27,25 @@ int main()
 	cout << setw(5) << fnum1 << setw(5) << fnum2 << setw(5) << endl;
 }
 
+// ******************************
+// Implement all your functions here
+// ******************************
+
 void getinput(int &a, int &b){
 	cout << "Enter two integers separated by a space " << endl;
 	cin >> a >> b;
 }
-
 void swapTwoValues(int &A, int &B){
 	int temp1 = A;
 	A = B;
 	B = temp1;
 }
-
 void getinput(float &c, float &d){
 	cout << "Enter two decimal numbers separated by a space " << endl;
 	cin >> c >> d;
 }
-
-void swapTwoValues(float C, float D){
+void swapTwoValues(float &C, float &D){
 	int temp2 = C;
 	C = D;
 	D = temp2;
 }
-// ******************************
-// Implement all your functions here
-// ******************************
